@@ -1,0 +1,138 @@
+body {
+    background-image: url(../imagens/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: VT323, monospace;
+    color: #fdfdfd;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.cartao {
+    background-color: #2f2f2f;
+    width: 380px;
+    border: 2px solid #e126d9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.minhas-informacoes {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.minhas-informacoes img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50px;
+    border: 4px solid #ff9900;
+}
+
+.nome {
+    font-size: 26px;
+}
+
+.cargo {
+    color: #b8bbc5;
+}
+
+.conteudo {
+    margin-top: 15px;
+}
+
+.abas {
+    display: flex;
+}
+
+.aba {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.abas img {
+    width: 30px;
+}
+
+.aba.selecionado,
+.informacoes-abas {
+    background-color: #262626;
+}
+
+.aba:hover {
+    background-color: #414141;
+}
+
+.informacao {
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.informacao.selecionado {
+    display: block;
+}
+
+.sub-titulo {
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.descricao {
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding: 0 15px;
+}
+
+.descricao span {
+    color: #ff9900;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.redes-sociais li a {
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.redes-sociais li a:hover {
+    opacity: 0.95;
+    box-shadow: 0 5px 15px #e126d9;
+}
+
+.curriculo {
+    background-color: #ff9900;
+}
+
+.linkedin {
+    background-color: #0075b5;
+}
+
+.github {
+    background-color: #545454;
+}
